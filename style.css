@@ -24,13 +24,13 @@ h2 {
 
 a {
   text-decoration: none;
-  color: whitesmoke;
+  color: #eb811ed8;
 }
 
 /**************************  NAVBAR  ***************************/
 nav {
   overflow: hidden;
-  background-color: #af906dd8;
+  background-color: aliceblue;
   position: fixed;
   width: 100%;
   opacity: 0.9;
@@ -49,5 +49,34 @@ header li a {
   font-family: 'Dancing Script', cursive;
   font-weight: bold;
   float: left;
-  
+}
+
+/**************************  IMAGE PRINCIPALE  ***************************/
+#imagePrincipale {
+  padding-top: 60px;
+  background: url(media/image-principale.JPG) no-repeat  fixed 50% 50%;
+  background-size: cover;
+  height: 799px;
+}
+h1 {
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  color: aliceblue;
+  font-size: 5.4em;
+  margin-top: 100px;
+  text-shadow: 1px 3px 2px black;
+}
+#premierTrait {
+  height: 1.4px;
+  width: 30%;
+  margin: -25px auto;
+  background-color: aliceblue;
+  text-shadow: 1px 3px 2px black;
+}
+h3 {
+  text-align: center;
+  color: aliceblue; 
+  font-size: 3em;
+  font-family: 'Dancing Script', cursive; 
+  text-shadow: 1px 3px 2px black;
 }
