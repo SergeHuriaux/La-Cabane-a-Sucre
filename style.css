@@ -163,3 +163,174 @@ h3 {
   box-shadow: -6px 6px 28px -1px rgba(0,0,0,0.75);
 }
 
+/**************************  FOOTER  ***************************/
+footer {
+background: rgb(174,238,221);
+background: radial-gradient(circle, rgba(174,238,221,1) 0%, rgba(148,187,233,1) 16%);
+  color: aliceblue;
+  padding: 20px 0 10px 0;
+  text-align: center;
+}
+/* form {
+  margin: 0 auto;
+  max-width: 900px;
+  min-width: 300px;
+}
+input {
+  border: none;
+  width: 40%;
+  padding: 5px 5px;
+  margin: 1px 0;
+  font-size: 1.1em;
+  font-family: 'Advent Pro', sans-serif;
+  border-radius: 10px;
+}
+textarea {
+  border: none;
+  width: 82.5%;
+  font-family: 'Advent Pro', sans-serif;
+  border-radius: 10px;
+  margin: 1.5px 0;
+  font-size: 1.1em;
+  height: 120px;
+
+}
+button {
+  border: none;
+  width: 45%;
+  font-family: 'Advent Pro', sans-serif;
+  border-radius: 10px;
+  margin: 1px 0;
+  font-size: 1.3em;
+  background-color: aliceblue;
+}
+button:hover {
+  background-color: #e55039;
+  color: #FFFAE1;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+} */
+.box {
+	width: 30%;
+  margin: 15px auto;
+	padding: 40px;
+	background: rgba(0,0,0,.4);
+	box-sizing: border-box;
+	box-shadow: 0 15px 25px rgba(0,0,0,.5);
+	border-radius: 10px;
+}
+.box h2 {
+	margin: 0 0 30px;
+	padding: 0;
+	color: #FFF;
+	text-align: center;
+}
+.box .inputBox {
+	position: relative;
+}
+.box .inputBox input {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #FFF;
+	letter-spacing: 1px;
+	margin-bottom: 30px;
+	border: none;
+	border-bottom: 1px solid #FFF;
+	outline: none;
+	background: transparent;
+}
+.box .inputBox label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #FFF;
+	pointer-events: none;
+	transition: .5s;
+	animation: LabelOnLoad 1s forwards 0s ease;
+}
+.inputBox textarea {
+  border: none;
+  outline: none;
+  width: 100%;
+  margin-bottom: 5px;
+  background: transparent;
+	color: #FFF;
+  border-bottom: 1px solid #FFF;
+  pointer-events: none;
+	transition: .5s;
+	animation: LabelOnLoad 1s forwards 0s ease;
+}
+@keyframes LabelOnLoad{
+    0%{
+        transform: rotate(0) translateY(-19px);
+        opacity: 0;
+        }
+    100%{
+        transform: rotate(0) translateY(0);
+        opacity: 1;
+        }
+}
+.box .inputBox input:focus ~ label, 
+.box .inputBox input:valid ~ label {
+	top: -19px;
+	left:0;
+	color: #03A9F4;
+	font-size: 12px;
+}
+.box input[type='submit'] {
+	background: transparent;
+	border: none;
+	outline: none;
+	color: #FFF;
+	background: #03A9F4;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+	font-size: 14px;
+}
+.box input[type='submit']:hover {
+	background-color: rgba(3, 169, 244, 0.7);
+}
+#deuxiemeTrait {
+  height: 1px;
+  width: 75%;
+  background-color: #FFFAE1;
+  margin: 60px auto;
+}
+#copyrightEtIcons {
+  display: flex;
+  margin-bottom: 20px;
+  padding: 0 10%;
+}
+#copyright {
+  width: 50%;
+  text-align: left;
+  color: #eb811ed8;
+}
+#icons {
+  width: 50%;
+  text-align: right;
+}
+#icons a {
+  display: inline-block;
+  padding: 0 15px;
+  font-size: 1.3em;
+  color: #eb811ed8;
+}
+#icons a:hover {
+  transform: scale(1.5);
+  transition: 0.1s;
+}
+
+
+
+
+
+@media(max-width: 720px){
+	.box {
+		width: 80%;
+	}
+}
