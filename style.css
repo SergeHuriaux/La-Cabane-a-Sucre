@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Advent+Pro|Dancing+Script&display=swap');
 
-
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: 'Advent Pro', sans -serif;
@@ -33,7 +35,7 @@ a {
 nav {
   overflow: hidden;
   background-color: aliceblue;
-  position: fixed;
+  position:fixed;
   width: 100%;
   opacity: 0.9;
 }
