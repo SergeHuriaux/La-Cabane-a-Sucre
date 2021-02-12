@@ -390,7 +390,6 @@ textarea {
   margin: 1.5px 0;
   font-size: 1.1em;
   height: 120px;
-
 }
 button {
   border: none;
@@ -521,4 +520,3 @@ button:hover {
   transform: scale(1.5);
   transition: 0.1s;
 }
-
